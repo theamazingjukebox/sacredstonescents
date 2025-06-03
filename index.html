@@ -87,10 +87,37 @@
     em {
       color: #5c4a48;
     }
+
+    .ritual-button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(145deg, #e8dfd6, #c6b8aa);
+  border: none;
+  border-radius: 30px;
+  color: #4a3a30;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(100, 80, 60, 0.25), 0 0 12px rgba(200, 180, 160, 0.2);
+  transition: all 0.3s ease;
+}
+
+.ritual-button:hover {
+  background: linear-gradient(145deg, #d7cfc5, #b5a89c);
+  box-shadow: 0 8px 20px rgba(120, 100, 80, 0.3), 0 0 25px rgba(200, 180, 160, 0.35);
+  transform: scale(1.04);
+}
+
+.audio-section {
+  text-align: center;
+}
+
   </style>
 </head>
 <body>
+    
   <div class="container">
+    
     <h1><img src="Title.png" alt="" style="border-radius: 12px;"></h1>
     <p>
       Inspirados en la sabiduría ancestral de las piedras sagradas, los rituales antiguos y la medicina sensorial de las plantas, nuestros blends nacen como portales olfativos hacia estados más profundos de presencia, protección y conexión espiritual.
@@ -100,6 +127,17 @@
     </p>
     <p><strong>Sacred Stone Scents</strong> no es solo aroma.<br>
     Es presencia. Es tierra. Es misterio.</p>
+
+    <div class="audio-section">
+  <button onclick="document.getElementById('ritual-audio').play()" class="ritual-button">
+    🔊 Iniciar Ritual Sonoro
+  </button>
+
+  <audio id="ritual-audio" loop>
+    <source src="Archangel Metatron.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+</div>
 
     <div class="blend">
       <div class="blend-title">Stillness (CPTG)</div>
@@ -172,4 +210,3 @@
   </div>
 </body>
 </html>
-
