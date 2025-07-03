@@ -373,15 +373,24 @@
   }
 }
 
-.blend.warning {
-  background-color: #f8f1eb;
-  border-left: 5px solid #c99b76;
-  font-size: small;
-  padding: 1.5rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 14px rgba(80, 60, 40, 0.15);
+.warning-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
   margin-top: 2rem;
-  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.warning-box {
+  flex: 1 1 300px;
+  font-size: small;
+  max-width: 460px;
+}
+
+.warning-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -506,20 +515,26 @@ Al reposar en el fondo de cada frasco, estos cristales guardan el espacio energ�
 
     <p><em>Así mismo el aceite portador de nuestros blends es <strong>100% CPTG</strong> certificado, garantizando una experiencia segura, sensorial y profunda.</em></p>
 
-        <div class="blend warning">
-  <div class="blend-title">Advertencia de Uso Profesional</div>
-  <p>
-    Los productos ofrecidos en <strong>Sacred Stone Scents</strong> están diseñados para uso personal y con fines aromáticos. No sustituyen asesoría médica, terapias profesionales ni tratamientos clínicos.
-  </p>
-  
-    <li>No ingerir.</li>
-        <li>Evitar el contacto con ojos y mucosas.</li>
-        <li>Mantener fuera del alcance de niños y mascotas.</li>
-        <li>Consulta con un profesional de la salud si estás embarazada, lactando o padeces alguna condición médica.</li>
-        <li>Uso externo exclusivamente.</li>
-      </ul>
-      <p><em>Sacred Stone Scents no se hace responsable por el uso indebido de los productos o por reacciones adversas derivadas de una aplicación no recomendada.</em></p>
-    </div>
+       <div class="warning-wrapper">
+  <div class="blend warning-box">
+    <img src="tu-imagen.png" alt="Disponibles en MercadoLibre" class="warning-img" />
+  </div>
+
+  <div class="blend warning-box">
+    <div class="blend-title">Advertencia de Uso Profesional</div>
+    <p>
+      Los productos ofrecidos en <strong>Sacred Stone Scents</strong> están diseñados para uso personal y con fines aromáticos. No sustituyen asesoría médica, terapias profesionales ni tratamientos clínicos.
+    </p>
+    <ul>
+      <li>No ingerir.</li>
+      <li>Evitar el contacto con ojos y mucosas.</li>
+      <li>Mantener fuera del alcance de niños y mascotas.</li>
+      <li>Consulta con un profesional de la salud si estás embarazada, lactando o padeces alguna condición médica.</li>
+      <li>Uso externo exclusivamente.</li>
+    </ul>
+    <p><em>Sacred Stone Scents no se hace responsable por el uso indebido de los productos o por reacciones adversas derivadas de una aplicación no recomendada.</em></p>
+  </div>
+</div>
 
     <footer>
       © Sacred Stone Scents – Aromaterapia Ritual
